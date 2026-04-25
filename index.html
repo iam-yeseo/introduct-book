@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>죽이고 싶은 아이 1 - 책 소개</title>
+  <style>
+    /* 전체 페이지 기본 설정 */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f3f4f6;
+      color: #222;
+      line-height: 1.7;
+      font-family: 'Pretendard', sans-serif;
+    }
+
+    /* 메인 콘텐츠 박스 */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    .content-box {
+      background-color: #ffffff;
+      border: 1px solid #e4e4e7;
+      border-radius: 10px;
+      padding: 24px;
+    }
+
+    /* 상단 영역 */
+    header {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 2.2rem;
+    }
+
+    .author {
+      margin: 0;
+      font-size: 1.05rem;
+      color: #4b5563;
+    }
+
+    /* 공통 섹션 스타일 */
+    section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 1.35rem;
+      border-left: 4px solid #9ca3af;
+      padding-left: 10px;
+    }
+
+    /* 표지 + 소개를 나란히 배치 */
+    .book-layout {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .cover-area {
+      flex: 1 1 280px;
+      max-width: 320px;
+      border: 1px solid #d1d5db;
+      background-color: #fafafa;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .cover-area img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 1px solid #e5e7eb;
+      border-radius: 6px;
+      background-color: #f8fafc;
+    }
+
+    .cover-caption {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .intro-area {
+      flex: 2 1 420px;
+      min-width: 280px;
+    }
+
+    blockquote {
+      margin: 0 0 14px;
+      padding: 10px 14px;
+      background-color: #f9fafb;
+      border-left: 4px solid #9ca3af;
+      color: #374151;
+      font-style: italic;
+    }
+
+    ul,
+    ol {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* 표 스타일 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      vertical-align: top;
+    }
+
+    td:first-child {
+      width: 150px;
+      background-color: #f9fafb;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      text-align: center;
+      color: #4b5563;
+      font-size: 1rem;
+    }
+
+    /* 모바일 화면에서 세로 정렬 */
+    @media (max-width: 768px) {
+      .content-box {
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .book-layout {
+        flex-direction: column;
+      }
+
+      .cover-area,
+      .intro-area {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      td:first-child {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="content-box">
+      <!-- 1. 상단 영역 -->
+      <header>
+        <h1>죽이고 싶은 아이 1</h1>
+        <p class="author"><strong>작가:</strong> 이꽃님</p>
+      </header>
+
+      <!-- 2. 책 표지 + 3. 책 소개 영역 -->
+      <section>
+        <h2>책 표지 및 소개</h2>
+        <div class="book-layout">
+          <article class="cover-area">
+            <!-- 이미지 파일이 없을 때도 위치를 확인하기 쉽도록 영역을 고정 -->
+            <img src="book-cover.jpg" alt="죽이고 싶은 아이 1 책 표지">
+            <p class="cover-caption">※ 책 표지 이미지 위치 (파일명: <mark>book-cover.jpg</mark>)</p>
+          </article>
+
+          <article class="intro-area">
+            <blockquote>
+              "사람들이 믿으면 그게 사실이 되는 거야. 팩트는 중요하지 않아."
+            </blockquote>
+            <p>
+              이 소설은 어느 날 학교 건물 뒤 공터에서 여고생 <strong>‘서은’</strong>이 시체로 발견되고,
+              둘도 없는 단짝 친구였던 <strong>‘주연’</strong>이 가장 유력한 용의자로 체포되면서 시작되는
+              <em>미스터리 스릴러</em>이다.
+            </p>
+            <p>
+              가장 큰 문제는 용의자인 주연이가 그날의 일을 전혀 기억하지 못한다는 점이다.
+              주연이는 정말 가장 친밀했던 친구를 죽였을까?
+            </p>
+            <p>
+              이 책은 단순히 범인을 추리하는 이야기를 넘어, <strong>‘우리가 진실이라고 믿는 것이 정말 진실일까?’</strong>라는
+              질문을 던진다. 각자의 입장에 따라 진실이 어떻게 왜곡되고 편집되는지,
+              사람들의 맹목적인 믿음이 얼마나 무서운지를 보여주는 몰입감 있는 작품이다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- 4. 주요 인물 영역 -->
+      <section>
+        <h2>주요 인물</h2>
+        <ul>
+          <li><strong>서은:</strong> 학교 건물 뒤 공터에서 시체로 발견된 여고생</li>
+          <li><strong>주연:</strong> 서은의 단짝 친구이자 가장 유력한 용의자, 하지만 사건 당일의 기억을 잃은 인물</li>
+        </ul>
+      </section>
+
+      <!-- 5. 목차 및 구성 영역 -->
+      <section>
+        <h2>목차 및 구성</h2>
+        <p>
+          이 책은 일반적인 ‘1장, 2장’ 형식이 아니라,
+          <strong>다양한 시점이 교차되는 독특한 전개 방식</strong>으로 진실을 추적한다.
+        </p>
+        <ol>
+          <li><strong>프롤로그</strong></li>
+          <li>
+            <strong>17명의 인터뷰와 주연의 이야기 교차</strong><br>
+            사건을 둘러싼 동창생, 주변인, 프로파일러, 변호사 등 17명의 각기 다른 증언과
+            기억을 잃은 주연이의 시점이 번갈아 등장하면서 진실의 퍼즐을 맞춰가는 구조이다.
+          </li>
+          <li>
+            <strong>작가의 말</strong><br>
+            진실과 믿음에 대해 고민했던 작가의 메시지가 담겨 있다.
+          </li>
+        </ol>
+      </section>
+
+      <!-- 6. 책 정보 표 -->
+      <section>
+        <h2>책 정보</h2>
+        <table>
+          <tr>
+            <td>제목</td>
+            <td>죽이고 싶은 아이 1</td>
+          </tr>
+          <tr>
+            <td>작가</td>
+            <td>이꽃님</td>
+          </tr>
+          <tr>
+            <td>장르</td>
+            <td>미스터리 스릴러</td>
+          </tr>
+          <tr>
+            <td>분위기</td>
+            <td>긴장감 있음, 몰입감 있음</td>
+          </tr>
+          <tr>
+            <td>추천 독자</td>
+            <td>추리소설을 좋아하는 사람, 진실과 기억을 다룬 이야기에 관심 있는 사람</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- 7. 하단 영역 -->
+      <footer>
+        진실은 하나일까, 아니면 믿는 만큼 만들어지는 걸까?
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
